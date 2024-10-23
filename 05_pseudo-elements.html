@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements</title>
+    <style>
+        body{
+            margin: 50px;
+            /* padding: 50px; */
+        }
+        .box{
+
+        }
+        .bloq{
+            font-style: italic;
+        }
+        .bloq-m::first-letter{
+            font-size: 2rem;
+            font-weight: bold;
+            color: red
+        }
+        .is-required::before{
+            content: "*";
+            color: red;
+            padding-right: 2px;
+        } /*si usamos after o before estamos obligasdos a poner el content:"";*/
+        ul{
+            list-style: none;
+        }
+        li::before{
+            content: "\1f43e";
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo-Elementos</h1>
+    <p class="bloq">Los pseudfo-elemnnetos sirven para poner estilo a partes del contenido de los elementos html
+    </p>
+    <p class="bloq-m">La primera letra tiene otro estilo</p>
+    <form>
+        <label class="is-required" for="nombre">Nombre</label>
+        <input  type="text" id="nombre">
+    </form>
+    <ul>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ul>
+</body>
+</html>
