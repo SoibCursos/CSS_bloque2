@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bos-Shadow</title>
+    <style>
+        .container{
+            display:flex;
+        }
+        .box{
+            background-color: coral;
+            padding: 1rem;
+            margin: 2rem;
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 10px 10px  teal;/*shorthand*/
+            /* valores negativos*/
+            box-shadow: -5px -5px 10px  teal;
+            /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: 10px 10px 10px 6px teal;
+            /* insert | offset-x | offset-y | color */
+            box-shadow: inset -5px -5px 10px 2px red;
+            /*Multiples sombras*/
+            box-shadow: 10px 10px red, -10px -10px green;
+        }
+        /* Lo mismo para text, cambiamos box opr txt y hace lo mismo pero el texo*/
+    </style>
+</head>
+<body>
+    div <div class="container">
+        <!-- (div.box>h3{Título}+p{lorem})*3 -->
+        <div class="box">
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus porro distinctio, illum veniam voluptate esse inventore et animi, ad molestias corporis sunt explicabo eum, consequatur aliquid a nemo asperiores.</p>
+        </div>
+        <div class="box">
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam nam maxime fugit placeat deleniti earum est esse nesciunt itaque velit corporis nisi at quibusdam minus inventore, quo, ex dolorem!</p>
+        </div>
+        <div class="box">
+            <h3>Título</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem possimus ex mollitia asperiores placeat, fugit nobis impedit nam? Neque, nostrum facilis. Voluptatibus culpa fugit labore accusantium natus dicta suscipit quisquam!</p>
+        </div>
+    </div>
+</body>
+</html>
