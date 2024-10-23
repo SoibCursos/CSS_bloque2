@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .box{
+            margin: 100px auto; /*para que me quede un poco centrado */
+            background-color: blue;
+            width: 200px;
+            height:200px;
+            /*la prioiedad transform tiene las siguientes propiedades; rotate | scale | skew | translate */
+            /* transform: rotate(45deg);
+            transform: scale(0.5); */
+            /* transform: rotate(45deg) scale(0.5); */
+            /*si quiero los dos lo hago en la misma línea, de lo contrario sólo aplica el último*/
+            /* transform: skew(25deg); lo que hace es inclinar el polígono un número de grados
+            transform: translate(-180px, 240px); */
+            /* transform: translate(-180px);
+            transform: translateY(-180px); */
+            /* transform: translateX(-240px); */
+
+            transition:all 1s ease-in-out;
+        }
+        .box:hover{
+           /*siempre que queramos usar 3d tenemos que dasr un valor de perspectiva */
+           transform: perspective(100px) translate3d(20px, 20px, 20px);
+        }
+        /* .box:active{
+            transform: rotate(30deg);
+            transform: translate(-100px);
+            
+        } */
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li>primero</li>
+            <li>segundo</li>
+            <li>tercero</li>
+        </ul>
+    </div>
+</body>
+</html>
