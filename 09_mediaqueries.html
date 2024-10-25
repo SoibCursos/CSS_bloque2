@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+            color: white;
+            padding-top: 100px;
+            text-align: center;
+        }
+        h1{
+            display: none;
+        }
+
+        /*--------------------------------*/
+        /*portrait*/
+        @media only screen and (max-width: 500px){
+            body{
+                background-color: red;
+            }
+            #portrait h1{
+                display: block;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="wide_screen">
+        <h1>Panorámica</h1>
+    </div>
+
+    <div id="Normal">
+        <h1>Normal</h1>
+    </div>
+
+    <div id="tablet">
+        <h1>Tablet</h1>
+    </div>
+
+    <div id="portrait">
+        <h1>Móvil normal</h1>
+    </div>
+
+    <div id="landscape">
+        <h1>Móvil horizontal</h1>
+    </div>
+</body>
+</html>
