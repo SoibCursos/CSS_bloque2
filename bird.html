@@ -341,10 +341,18 @@ BEFORE the style tag.*/
                 57.77778%, 88.88889% {top: -15px;}
                 66.66667% {top: -25px;}
             }
+            .globe .bird .body .eye:after {
+                -webkit-animation: eyes 4.5s linear infinite;
+                animation: eyes 4.5s linear infinite;
+            }
             /*Wings Shaking*/
             @keyframes wings {
                 0%, 88.88889%, 100% {top: 70px;}
                 91.11111% {top: 60px;}
+            }
+            .globe .bird .body:before, .globe .bird .body:after {
+                -webkit-animation: wings 4.5s linear infinite;
+                animation: wings 4.5s linear infinite;
             }
             /*Animation for movement of the feet.*/
             @keyframes feet {
@@ -357,6 +365,10 @@ BEFORE the style tag.*/
                 top: 0px;
                 }
             }
+            .globe .bird .body .feet:before, .globe .bird .body .feet:after {
+                -webkit-animation: feet 4.5s linear infinite;
+                animation: feet 4.5s linear infinite;
+            }
             /*this the time for clouds animation*/
             @keyframes cloud {
                 0% {
@@ -365,6 +377,12 @@ BEFORE the style tag.*/
                 100% {
                 left: 280px;
                 }
+            }
+            .globe .cloud.small {
+                -webkit-animation-delay: -1.5s;
+                animation-delay: -1.5s;
+                -webkit-animation-duration: 13.5s;
+                animation-duration: 13.5s;
             }
         }
     </style>
