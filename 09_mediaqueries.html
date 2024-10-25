@@ -26,6 +26,45 @@
                 display: block;
             }
         }
+            /*tablet*/
+            @media (min-width: 501px) and (max-width:768px){
+                body{
+                    background-color: blue;
+                }
+                #tablet h1{
+                    display: block;
+                }
+
+            }
+            /*pantalla normal*/
+             @media (min-width: 769px) and (max-width:1200px){
+                body{
+                    background-color: green
+                }
+                #normal h1{
+                    display: block;
+                }
+            }
+            /*wide_screen*/
+
+            @media (min-width: 1201px){
+                body{
+                    background-color: rgb(98, 197, 214)
+                }
+                #wide_screen h1{
+                    display: block;
+                }
+            }
+            /* landscape*/
+            @media(max-height:500px){
+                body{
+                    background-color: orange;
+
+                }
+                #landscape h1{
+                    display: block;
+                }
+            }
     
     </style>
 </head>
@@ -34,20 +73,20 @@
         <h1>Panorámica</h1>
     </div>
 
-    <div id="Normal">
+    <div id="normal">
         <h1>Normal</h1>
     </div>
 
     <div id="tablet">
-        <h1>Tablet</h1>
+        <h1>tablet</h1>
     </div>
 
     <div id="portrait">
-        <h1>Móvil normal</h1>
+        <h1>Móvil normal Portrait</h1>
     </div>
 
     <div id="landscape">
-        <h1>Móvil horizontal</h1>
+        <h1>Móvil horizontal landscape</h1>
     </div>
 </body>
 </html>
