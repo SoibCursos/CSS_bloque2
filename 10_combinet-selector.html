@@ -21,6 +21,16 @@
         }
 
         /* el indicador ~ hace referencia a todos los siguientes fuera del div, es decir, después del cierre del div "div ~ p{}". Para entenderlo creo que la mejor manera de sería decir que son todos los elemtos siguientes al seleccionado sin que haya otros por enmedio*/
+        input [required]{
+            background-color: greenyellow;
+        }
+        input[type="text"],
+        imput [type="email"]{
+        width: 100px;
+        }
+        a[target]{
+            background-color: brown;
+        }
     </style>
 </head>
 <body>
@@ -34,9 +44,19 @@
         </ul>
         <p>segundo parrafo dentro del div</p>
         <p>tercer parrafo dentro del div</p>
+        <a href="#">Página 1</a><br>
+        <a href="#">Página 2</a><br>
+        <a href="http://google.es" target="_blank">Ir a Google</a>
+        <br><br>
+          <p>parrafo fuera del div</p>
+        <p>otro parrafo fuera del div</p>
+        <br>
+        <br>
+        <input type="text" placeholder="Nombre" required><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="submit" value="Enviar">
     </div>
 
-    <p>parrafo fuera del div</p>
-    <p>otro parrafo fuera del div</p>
+  
 </body>
 </html>
