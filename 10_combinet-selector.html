@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /*sekectir descendiente*/
+        div p{
+            color: blue;
+        }
+
+        /*si div es padre directo de p*/
+        div > p {
+            color:orange;
+        }
+
+        /*el siguiente elemento hermano(realmente vecino ya que sibling es más adyacente que hermos), en este caso fuera del div es el siguiente p. El siguiente elemento si es parrafo*/
+        div + p {
+            color:red;
+        }
+
+        /* el indicador ~ hace referencia a todos los siguientes fuera del div, es decir, después del cierre del div "div ~ p{}"*/
+    </style>
+</head>
+<body>
+    <p>este parrafo esta antes de todos los div</p>
+    <div>
+        <p>primer parrafo</p>
+        <ul>
+            <li>elemento primero</li>
+            <li>elemento 2 <p>parrafo dentro del elemneto 2</p></li>
+            <li>elemento tres</li>
+        </ul>
+        <p>segundo parrafo dentro del div</p>
+        <p>tercer parrafo dentro del div</p>
+    </div>
+
+    <p>parrafo fuera del div</p>
+    <p>otro parrafo fuera del div</p>
+</body>
+</html>
