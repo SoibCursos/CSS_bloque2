@@ -11,8 +11,12 @@
         }
         .flex-container{
             display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+
             background-color: blanchedalmond;
         }
+        
         .item{
             background-color: cadetblue;
             border: #333 2px solid;
@@ -20,6 +24,13 @@
             padding: 10px;
             text-align: center;
             border-radius: 5px;
+            flex:1;
+        }
+        .item1{
+            flex-shrink: 0;
+        }
+        .item2{
+            flex:3;
         }
     </style>
 </head>
