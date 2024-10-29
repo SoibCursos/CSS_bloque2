@@ -10,9 +10,13 @@
             box-sizing: border-box;
         }
         .flex-container{
+            height: 100vh;
             display: flex;
-            /* flex-direction: row;
-            flex-wrap: wrap; */
+            /* flex-direction: row;*/
+            /*flex-wrap: wrap; cuando los elementoos ya no caben van saltando*/
+            /*flex-flow: row wrap; ---*esto es el shorthand de los otros dos anteriores*/
+            align-items: center;
+            justify-content:center;
 
             background-color: blanchedalmond;
         }
@@ -27,10 +31,30 @@
             flex:1;
         }
         .item1{
+            order: 2;
+            flex-grow: 6;
             flex-shrink: 0;
+            flex: basis 200px;
+            /* flex: 6 0; lo primero es el grow y el siguiente es el shrink, posría ponerle 200px si quisiera o auto que sería en automático */
         }
         .item2{
+            order:3;/*indican el oreden del elemento*/
             flex:3;
+            align-self: flex-end;
+        }
+        .item3{
+            flex-grow: 1;/*dice lo que ocupan del layout, me refiero a lo que sobredel layout*/
+            order:1;
+            font-size: 0.4rem;
+        }
+        .item4{
+            flex-grow: 1;
+        }
+        .item5{
+            flex-grow: 1;
+        }
+        .item6{
+            flex-grow: 2;
         }
     </style>
 </head>
@@ -44,6 +68,15 @@
         </div>
         <div class="item item3">
             <h3>item 3</h3>
+        </div>
+        <div class="item item4">
+            <h3>item 4</h3>
+        </div>
+        <div class="item item5">
+            <h3>item 5</h3>
+        </div>
+        <div class="item item6">
+            <h3>item 6</h3>
         </div>
    </div> 
 </body>
